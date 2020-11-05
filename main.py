@@ -16,7 +16,8 @@ from sklearn.metrics import accuracy_score
 
 # %%
 model_name = "alexnet"
-print("Model used: {}".format(model_name))
+epochs = 10
+print("Model used: {}, epochs: {}".format(model_name,epochs))
 data=[]
 labels=[]
 
@@ -148,7 +149,6 @@ else:
 
 # %%
 # Train and validate model
-epochs = 20
 history = model.fit(X_train, y_train, batch_size=64, epochs=epochs, validation_data=(X_val, y_val))
 
 # %%
