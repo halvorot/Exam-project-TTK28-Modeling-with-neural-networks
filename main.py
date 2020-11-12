@@ -16,7 +16,7 @@ from sklearn.metrics import accuracy_score
 
 # %%
 model_name = "alexnet"
-epochs = 10
+epochs = 15
 print("Model used: {}, epochs: {}".format(model_name,epochs))
 data=[]
 labels=[]
